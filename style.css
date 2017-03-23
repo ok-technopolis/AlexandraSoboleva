@@ -54,7 +54,6 @@ body{
 }
 
 .todo-add_input{
-	font-family: HelveticaNeue-LightItalic, Helvetica, sans-serif;
 	float:left;
 	width:500px;
 	margin-left: 15px;
@@ -76,22 +75,26 @@ body{
 }
 
 .todo-add_input::-webkit-input-placeholder {
+	font-family: HelveticaNeue-LightItalic, Helvetica, sans-serif;
 	color:#ccc;
 	font-style:italic;
 	font-weight:100;
 }
 
 .todo-add_input::-moz-placeholder {
+	font-family: HelveticaNeue-LightItalic, Helvetica, sans-serif;
 	color:#ccc;
 	font-style:italic;
 	font-weight:100;
 }
 .todo-add_input:-moz-placeholder {
+	font-family: HelveticaNeue-LightItalic, Helvetica, sans-serif;
 	color:#ccc;
 	font-style:italic;
 	font-weight:100;
 }
 .todo-add_input:-ms-input-placeholder {
+	font-family: HelveticaNeue-LightItalic, Helvetica, sans-serif;
 	color:#ccc;
 	font-style:italic;
 	font-weight:100;
@@ -204,22 +207,23 @@ button{
 	font-family: HelveticaNeue-Light, Helvetica, sans-serif;
 	color: #888;
 	font-size: 14px;
+	background-color: #fff;
 }
 .todo-action-bar_counter-not-completed{
 	float:left;
-	padding-top: 10px;
+	margin-top: 10px;
 }
 
 .todo-action-bar_clear-completed{
 	float:right;
-	padding-top: 10px;
+	margin-top: 10px;
 
 }
 
 .todo-action-bar_filtres{
 	float:left;
 	margin-left: 114px;
-	padding-top: 8px;
+	margin-top: 8px;
 }
 
 .__active {
