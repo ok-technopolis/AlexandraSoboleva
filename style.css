@@ -3,7 +3,7 @@ body{
 }
 
 .todo-header .todo-title{
-	font-family: Helvetica, sans-serif;
+	font-family: Helvetica, Arial, sans-serif;
 	color:#ebd7d7;
 	font-size:100px;
 	padding: 0;
@@ -48,7 +48,7 @@ body{
 .todo-add_input, .todo-item_text{
 	color:#666;
 	font-size: 24px;
-	font-family: Helvetica, sans-serif;
+	font-family: Helvetica, Arial, sans-serif;
 
 }
 
@@ -184,7 +184,7 @@ button{
 
 .todo-action-bar_filtres_item,
 .todo-action-bar_clear-completed, .todo-action-bar_counter-not-completed{
-	font-family: Helvetica, sans-serif;
+	font-family: Helvetica, Arial, sans-serif;
 	color: #888;
 	font-size: 14px;
 	background-color: #fff;
