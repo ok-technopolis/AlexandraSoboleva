@@ -1,25 +1,9 @@
-@font-face {
-    font-family: HelveticaNeue-UltraLight;
-    src: url("fonts/HelveticaNeue-UltraLight.otf");
-}
-
-@font-face {
-    font-family: HelveticaNeue-LightItalic;
-    src: url("fonts/HelveticaNeue-LightItalic.otf");
-}
-
-@font-face {
-    font-family: HelveticaNeue-Light;
-    src: url("fonts/HelveticaNeue-Light.otf");
-}
-
-
 body{
 	background-color: #f5f5f5;
 }
 
 .todo-header .todo-title{
-	font-family: HelveticaNeue-UltraLight, Helvetica, sans-serif;
+	font-family: Helvetica, sans-serif;
 	color:#ebd7d7;
 	font-size:100px;
 	padding: 0;
@@ -29,7 +13,6 @@ body{
 }
 
 .todo-main{
-	font-family: HelveticaNeue-Light, Helvetica, sans-serif;
 	margin:auto;
 	width: 560px;
 	background-color: #fff;
@@ -65,6 +48,7 @@ body{
 .todo-add_input, .todo-item_text{
 	color:#666;
 	font-size: 24px;
+	font-family: Helvetica, sans-serif;
 
 }
 
@@ -75,26 +59,22 @@ body{
 }
 
 .todo-add_input::-webkit-input-placeholder {
-	font-family: HelveticaNeue-LightItalic, Helvetica, sans-serif;
 	color:#ccc;
 	font-style:italic;
 	font-weight:100;
 }
 
 .todo-add_input::-moz-placeholder {
-	font-family: HelveticaNeue-LightItalic, Helvetica, sans-serif;
 	color:#ccc;
 	font-style:italic;
 	font-weight:100;
 }
 .todo-add_input:-moz-placeholder {
-	font-family: HelveticaNeue-LightItalic, Helvetica, sans-serif;
 	color:#ccc;
 	font-style:italic;
 	font-weight:100;
 }
 .todo-add_input:-ms-input-placeholder {
-	font-family: HelveticaNeue-LightItalic, Helvetica, sans-serif;
 	color:#ccc;
 	font-style:italic;
 	font-weight:100;
@@ -204,7 +184,7 @@ button{
 
 .todo-action-bar_filtres_item,
 .todo-action-bar_clear-completed, .todo-action-bar_counter-not-completed{
-	font-family: HelveticaNeue-Light, Helvetica, sans-serif;
+	font-family: Helvetica, sans-serif;
 	color: #888;
 	font-size: 14px;
 	background-color: #fff;
