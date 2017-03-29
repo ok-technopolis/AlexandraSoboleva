@@ -1,0 +1,13 @@
+.todo-action-bar{
+	height: 40px;
+	padding-right:12px; 
+	padding-left:12px;
+}
+
+
+
+.todo-action-bar:after{
+	content: '';
+	display: block;
+	clear: both;
+}

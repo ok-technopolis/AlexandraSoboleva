@@ -1,0 +1,14 @@
+.bottom-border_item{
+	background-color: inherit;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+	height: 5px;
+}
+
+.__first{
+	margin:auto;
+	width:556px;
+}
+.__second{
+	margin:auto;
+	width:552px;
+}

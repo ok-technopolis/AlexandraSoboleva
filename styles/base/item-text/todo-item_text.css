@@ -1,0 +1,26 @@
+.todo-item_text{
+	color:#666;
+	font-size: 24px;
+
+}
+
+.todo-item_text{
+	border: none;
+	outline: none;
+	resize: none;
+	overflow: hidden;
+ 	margin-left:54px;
+ 	margin-top: 20px;
+ 	margin-right: 35px;
+ 	word-break: break-all;
+}
+
+.todo-list .__completed .todo-item_text{
+	color:#ccc;
+	font-size: 24px;
+	text-decoration: line-through;
+}
+
+.todo-item:hover .todo-item_text{
+	background-color: #fafafa;
+}

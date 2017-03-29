@@ -1,0 +1,18 @@
+.todo-item{
+	font-family: Helvetica,Arial, sans-serif;
+	border-bottom: solid 1px #e6e6e6;
+	min-height: 62px;
+	cursor: pointer;
+	overflow: hidden;
+	position: relative;
+}
+
+.todo-item:hover{
+	background-color: #fafafa;
+}
+
+.todo-item:after{
+	content: '';
+	display: block;
+	clear: both;
+}

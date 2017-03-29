@@ -1,0 +1,36 @@
+.todo-add_input{
+	float:left;
+	width:500px;
+	margin-left: 15px;
+	margin-top: 15px;
+	border: none;
+	outline: none;
+}
+
+.todo-add_input{
+	color:#666;
+	font-size: 24px;
+
+}
+
+.todo-add_input::-webkit-input-placeholder {
+	color:#ccc;
+	font-style:italic;
+	font-weight:100;
+}
+
+.todo-add_input::-moz-placeholder {
+	color:#ccc;
+	font-style:italic;
+	font-weight:100;
+}
+.todo-add_input:-moz-placeholder {
+	color:#ccc;
+	font-style:italic;
+	font-weight:100;
+}
+.todo-add_input:-ms-input-placeholder {
+	color:#ccc;
+	font-style:italic;
+	font-weight:100;
+}

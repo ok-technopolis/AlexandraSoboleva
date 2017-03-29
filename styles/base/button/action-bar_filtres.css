@@ -1,0 +1,17 @@
+.todo-action-bar_filtres_item{
+	font-family: Helvetica, Arial, sans-serif;
+	color: #888;
+	font-size: 14px;
+	background-color: #fff;
+}
+
+.todo-action-bar_filtres{
+	float:left;
+	margin-left: 114px;
+	margin-top: 8px;
+}
+
+.todo-action-bar_filtres .__active {
+    border: 2px solid #e6e6e6;
+    border-radius: 5px;
+}

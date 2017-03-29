@@ -1,0 +1,10 @@
+.todo-action-bar_counter-not-completed{
+	font-family: Helvetica, Arial, sans-serif;
+	color: #888;
+	font-size: 14px;
+	background-color: #fff;
+}
+.todo-action-bar_counter-not-completed{
+	float:left;
+	margin-top: 10px;
+}
