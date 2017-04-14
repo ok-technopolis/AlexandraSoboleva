@@ -7,19 +7,12 @@
 	<link href="styles/default.css" rel="stylesheet">
 	<link href="styles/base/title/title.css" rel="stylesheet">
 	<link href="styles/base/button/button.css" rel="stylesheet">
-	<link href="styles/base/button/select-all.css" rel="stylesheet">
-	<link href="styles/base/button/todo-item_remove.css" rel="stylesheet">
-	<link href="styles/base/button/action-bar_filtres.css" rel="stylesheet">
-	<link href="styles/base/button/action-bar_clear-completed.css" rel="stylesheet">
+	<link href="styles/base/button/action.css" rel="stylesheet">
 	<link href="styles/base/checkbox/checkbox.css" rel="stylesheet">
-	<link href="styles/base/todo-input/todo-add-input.css" rel="stylesheet">
-	<link href="styles/base/item-text/todo-item_text.css" rel="stylesheet">
-	<link href="styles/base/action-bar_counter/action-bar_item-counter.css" rel="stylesheet">
 	<link href="styles/project/todo/todo.css" rel="stylesheet">
 	<link href="styles/project/todo-add/todo-add.css" rel="stylesheet">
 	<link href="styles/project/todo-list/todo-list.css" rel="stylesheet">
-	<link href="styles/project/todo-item/todo-item.css" rel="stylesheet">
-	<link href="styles/project/todo-item/todo-item_mark.css" rel="stylesheet">
+	<link href="styles/project/todo-list/todo-item.css" rel="stylesheet">
 	<link href="styles/project/action-bar/todo-action-bar.css" rel="stylesheet">
 	<link href="styles/project/bottom-border/todo-bottom-border.css" rel="stylesheet">
 </head>
@@ -30,34 +23,29 @@
 
 	<div class="todo-main">
 		<div class="todo-add">
-			<button class="todo-add_select-all" aria-label="Mark all as completed"></button>
-			<input class="todo-add_input" placeholder="What needs to be done?" aria-label="Add todo field"/>
+			<div class="action"><button class="action-select-all_target" aria-label="Mark all as completed"></button><div class="action-select-all_visual"></div></div>
+			<div class="todo-add_action-input-text"><input class="todo-add_input" placeholder="What needs to be done?" aria-label="Add todo field"/></div>
 		</div>
 
 		<div class="todo-list">
 			<div class="todo-item">
-				<label class="for-checkbox-label"><input type="checkbox" class="todo-item_mark" aria-label="Mark as completed"/>
-				<span class="for-checkbox-span"></span></label>
-				<button class="todo-item_remove" aria-label="Remove todo"></button>
+				<div class="input-checkbox"><input type="checkbox" class="input-checkbox_target" aria-label="Mark is not completed"/><div class="input-checkbox_visual"></div> </div>
+				<div class="action"><button class="action-remove_target" aria-label="Remove todo"></button><div class="action-remove_visual"></div></div>
 				<div contentEditable="true" class="todo-item_text">HTML</div>
 			</div>
 			<div class="todo-item __completed">
-				<label class="for-checkbox-label">
-					<input type="checkbox" checked="checked" class="todo-item_mark" aria-label="Mark as not completed"/>
-				<span class="for-checkbox-span"></span></label>
-				<button class="todo-item_remove" aria-label="Remove todo"></button>
+				<div class="input-checkbox"><input type="checkbox" checked="checked" class="input-checkbox_target" aria-label="Mark is completed"/><div class="input-checkbox_visual"></div> </div>
+				<div class="action"><button class="action-remove_target" aria-label="Remove todo"></button><div class="action-remove_visual"></div></div>
 				<div contentEditable="true" class="todo-item_text">CSS</div>
 			</div>
 			<div class="todo-item">
-				<label class="for-checkbox-label"><input type="checkbox" class="todo-item_mark" aria-label="Mark as completed"/>
-				<span class="for-checkbox-span"></span></label>
-				<button class="todo-item_remove" aria-label="Remove todo"></button>
+				<div class="input-checkbox"><input type="checkbox" class="input-checkbox_target" aria-label="Mark is not completed"/><div class="input-checkbox_visual"></div> </div>
+				<div class="action"><button class="action-remove_target" aria-label="Remove todo"></button><div class="action-remove_visual"></div></div>
 				<div contentEditable="true" class="todo-item_text">JS</div>
 			</div>
 			<div class="todo-item">
-				<label class="for-checkbox-label"><input type="checkbox" class="todo-item_mark" aria-label="Mark as completed"/>
-				<span class="for-checkbox-span"></span></label>
-				<button class="todo-item_remove" aria-label="Remove todo"></button>
+				<div class="input-checkbox"><input type="checkbox" class="input-checkbox_target" aria-label="Mark is not completed"/><div class="input-checkbox_visual"></div> </div>
+				<div class="action"><button class=action-remove_target" aria-label="Remove todo"></button><div class="action-remove_visual"></div></div>
 				<div contentEditable="true" class="todo-item_text">JS tools</div>
 			</div>
 		</div>

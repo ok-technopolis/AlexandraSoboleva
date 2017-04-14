@@ -4,7 +4,7 @@
 	min-height: 62px;
 	cursor: pointer;
 	overflow: hidden;
-	position: relative;
+	display: flex;
 }
 
 .todo-item:hover{

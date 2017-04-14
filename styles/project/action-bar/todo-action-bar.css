@@ -1,13 +1,51 @@
 .todo-action-bar{
-	height: 40px;
+	min-height: 40px;
 	padding-right:12px; 
 	padding-left:12px;
 }
+	.todo-action-bar_counter-not-completed{
+		font-family: 'Helvetica Neue', Arial, sans-serif;
+		color: #888;
+		font-size: 14px;
+		background-color: #fff;
 
+		float:left;
+		word-break: break-all;
+		margin-top: 10px;
+		width:30%;
+	}
+	.todo-action-bar_clear-completed{
+		font-family: Helvetica, Arial, sans-serif;
+		color: #888;
+		font-size: 14px;
+		background-color: #fff;
+		word-break: break-all;
 
+		float:right;
+		margin-top: 10px;
+		width:22%;
+	}
+	.todo-action-bar_filtres{
+		float:left;
+		margin-top: 8px;
+		width:48%;
+	}
+		.todo-action-bar_filtres_item{
+			font-family: 'Helvetica Neue', Arial, sans-serif;
+			color: #888;
+			font-size: 14px;
+			background-color: #fff;
+			word-break: break-all;
+			max-width:32%;
+		}
+	.todo-action-bar_filtres .__active {
+		border: 2px solid #e6e6e6;
+		border-radius: 5px;
+	}
 
 .todo-action-bar:after{
 	content: '';
 	display: block;
 	clear: both;
 }
+

@@ -3,9 +3,11 @@
 	color: #888;
 	font-size: 14px;
 	background-color: #fff;
+	word-break: break-all;
 }
 
 .todo-action-bar_clear-completed{
 	float:right;
 	margin-top: 10px;
+	width:22%;
 }

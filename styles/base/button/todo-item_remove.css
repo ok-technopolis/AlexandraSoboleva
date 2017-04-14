@@ -1,13 +1,11 @@
 .todo-item_remove{
 	width: 18px; 
     height: 18px; 
-    float: right; 
     margin-right: 11px;
     margin-bottom: 20px;
-    background: #fff;
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    float: right; 
+    align-self: flex-end;
+    order: 59;
 }
 
 .todo-item:hover .todo-item_remove{

@@ -1,0 +1,6 @@
+.todo-item .input-checkbox{
+    float:left;
+    align-self: center;
+    order: 1;
+    margin-left: 10px;
+}
