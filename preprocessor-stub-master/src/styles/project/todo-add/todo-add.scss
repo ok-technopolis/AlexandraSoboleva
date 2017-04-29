@@ -1,0 +1,49 @@
+@import "../../config/globals";
+
+.todo-add {
+	height: 62px;
+	border-bottom: solid 1px $c-border;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+	.todo-add_action-input-text{
+		overflow: hidden;
+		padding-right: 5px;
+		padding-left: 15px;
+	}
+	.todo-add_input{
+		margin-top: 15px;
+		width: 100%;
+		color:$c-gray;
+		font-size: $lh_x-large;
+		box-sizing:  border-box;
+		@include reset-input();
+		@include placeholder() {
+			color: $c-light-gray-light;
+			font-style: italic;
+			font-weight: 100;
+		}
+	}
+	.todo-add .action{
+		float: left;
+		margin-top: 27px;
+		margin-left: 19px;
+		width: 24px;
+		height: 24px;
+	}
+	.todo-add .action .action-select-all_target{
+		opacity: 0;
+		@include absolute-full();
+		z-index: 1;
+	}
+	.todo-add .action .action-select-all_visual{
+		/*position: absolute;
+		top: 0%;
+		right: 0%;
+		bottom: 0%;
+		left: 0%;*/
+		@include absolute-full();
+		background: url('../../../images/select-all.png') no-repeat;
+		border: none;
+	}
