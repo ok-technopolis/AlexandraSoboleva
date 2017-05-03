@@ -307,6 +307,15 @@ $c-micro-elements: #ebdfdf;
   font-weight: 100;
 }
 
+.todo-main .todo-add .action {
+  visibility: hidden;
+}
+
+.todo-main.__has-todo .todo-add .action {
+  visibility: visible;
+  opacity: 1;
+}
+
 .todo-add .action {
   float: left;
   margin-top: 27px;
@@ -362,7 +371,6 @@ $c-micro-elements: #ebdfdf;
   width: 560px;
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
-  min-height: 400px;
   position: relative;
   margin: 0 16px 16px;
 }
