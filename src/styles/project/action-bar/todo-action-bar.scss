@@ -1,0 +1,49 @@
+@import "../../config/globals";
+
+.todo-action-bar{
+	min-height: 40px;
+	padding-right:$offset_3x;
+	padding-left:$offset_3x;
+	text-align: center;
+}
+	.todo-action-bar_counter-not-completed{
+		font-family: $font-main;
+		color:$c-gray-bar-text;
+		font-size: $fs_little;
+		background-color: $c-white;
+
+		float:left;
+		/*word-break: break-all;*/
+		margin-top: 10px;
+	}
+	.todo-action-bar_clear-completed{
+		font-family:  $font-main;
+		color: $c-gray-bar-text;
+		font-size: $fs_little;
+		background-color: $c-white;
+		border: none;
+		outline: none;
+		float:right;
+		margin-top: 10px;
+	}
+	.todo-action-bar_filtres{
+		white-space: nowrap;
+		display: inline-block;
+		margin: $offset_2x 0;
+	}
+
+		.todo-action-bar_filtres .filtres_item{
+			margin: 0 $offset;
+		}
+		.todo-action-bar_filtres .filtres_item:first-child {
+			margin-left: 0;
+		}
+		.todo-action-bar_filtres .filtres_item:last-child {
+			margin-right: 0;
+		}
+
+
+.todo-action-bar:after{
+	@include clearfix();
+}
+

@@ -1,0 +1,10 @@
+@import "../../config/globals";
+
+	.todo-title{
+	font-family: $font-main;
+	color:$c-title;
+	font-size:$fs-title;
+	text-align: center;
+	font-weight:lighter;
+	text-transform: lowercase;
+}

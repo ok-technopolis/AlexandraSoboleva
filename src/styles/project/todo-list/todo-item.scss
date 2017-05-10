@@ -1,0 +1,82 @@
+@import "../../config/globals";
+
+.todo-item{
+	font-family: $font-main;
+	border-bottom: solid 1px $c-light-gray-border;
+	min-height: 62px;
+	cursor: pointer;
+	overflow: hidden;
+	display: flex;
+}
+	.todo-item .input-checkbox{
+		float:left;
+		align-self: center;
+		order: 1;
+		margin-left: 10px;
+	}
+	.todo-item_text{
+		color:$c-gray;
+		font-size: $lh_x-large;
+
+		@include reset-input();
+		margin-left:10px;
+		margin-top: 20px;
+		word-break: break-all;
+
+
+		overflow: hidden;
+		align-self: flex-start;
+		flex: 1 0;
+		order: 10;
+	}
+
+	.todo-item_remove-action{
+		width: 18px;
+		height: 18px;
+		margin-right: 11px;
+		margin-bottom: 20px;
+		float: right;
+		align-self: flex-end;
+		order: 59;
+	}
+		.todo-item_remove-action .action_target{
+			opacity: 0;
+			@include absolute-full();
+			z-index: 1;
+		}
+		.todo-item_remove-action .action_visual{
+			/*position: absolute;
+			top: 0%;
+			right: 0%;
+			bottom: 0%;
+			left: 0%;*/
+			@include absolute-full();
+			background-color: inherit;
+		}
+
+
+.todo-item.__completed .todo-item_text{
+	color:$c-light-gray-light;
+	font-size: $lh_x-large;
+	text-decoration: line-through;
+}
+
+.todo-item:hover{
+	background-color: $c-pink-white;
+}
+	.todo-item:hover .todo-item_text{
+		background-color: $c-pink-white;
+	}
+	.todo-item:hover .todo-item_remove-action .action_visual{
+		background: url('../../../images/close.png') no-repeat;
+		@include retinaMedia(){
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			background-image: url('../../../images/close@2x.png');
+		}
+	}
+
+.todo-item:after{
+	@include clearfix();
+}
