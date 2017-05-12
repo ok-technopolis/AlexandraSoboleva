@@ -16,6 +16,7 @@
 		/*word-break: break-all;*/
 		margin-top: 10px;
 	}
+
 	.todo-action-bar_clear-completed{
 		font-family:  $font-main;
 		color: $c-gray-bar-text;
@@ -25,20 +26,22 @@
 		outline: none;
 		float:right;
 		margin-top: 10px;
+		cursor: pointer;
 	}
+
 	.todo-action-bar_filtres{
 		white-space: nowrap;
 		display: inline-block;
 		margin: $offset_2x 0;
 	}
 
-		.todo-action-bar_filtres .filtres_item{
+		.todo-action-bar_filtres .filtres-item{
 			margin: 0 $offset;
 		}
-		.todo-action-bar_filtres .filtres_item:first-child {
+		.todo-action-bar_filtres .filtres-item:first-child {
 			margin-left: 0;
 		}
-		.todo-action-bar_filtres .filtres_item:last-child {
+		.todo-action-bar_filtres .filtres-item:last-child {
 			margin-right: 0;
 		}
 

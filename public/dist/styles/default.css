@@ -121,11 +121,14 @@ body {
 
 .input-checkbox_target:checked ~ .input-checkbox_visual {
   border: solid 1px #81d0c1;
-  background: url("../images/completed.png") no-repeat 5px;
+}
+
+.input-checkbox_target:checked ~ .input-checkbox_visual .input-checkbox_visual_icon {
+  background: url("../images/completed.png") no-repeat;
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 120dpi), (min-resolution: 1.5dppx) {
-  .input-checkbox_target:checked ~ .input-checkbox_visual {
+  .input-checkbox_target:checked ~ .input-checkbox_visual .input-checkbox_visual_icon {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 50% 50%;
@@ -144,16 +147,31 @@ body {
   border: solid 1px #d5d5d5;
 }
 
-.filtres_item {
+.input-checkbox_visual_icon {
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 120dpi), (min-resolution: 1.5dppx) {
+  .input-checkbox_visual_icon {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+  }
+}
+
+.filtres-item {
   font-family: "Helvetica Neue", Arial, sans-serif;
   color: #888;
   font-size: 14px;
   background-color: #fff;
   border: none;
   outline: none;
+  cursor: pointer;
 }
 
-.filtres_item.__active {
+.filtres-item.__active {
   border: 2px solid #e6e6e6;
   border-radius: 5px;
 }
@@ -166,7 +184,7 @@ body {
   overflow: hidden;
 }
 
-.todo-add_action-input-text {
+.todo-add_input-text {
   overflow: hidden;
   padding-right: 5px;
   padding-left: 15px;
@@ -207,7 +225,7 @@ body {
   font-weight: 100;
 }
 
-.todo-main .todo-add .todo-add_select-all-action {
+.todo-add_select-all-action {
   visibility: hidden;
 }
 
@@ -232,6 +250,7 @@ body {
   width: 100%;
   height: 100%;
   z-index: 1;
+  cursor: pointer;
 }
 
 .todo-add_select-all-action .action_visual {
@@ -352,6 +371,7 @@ body {
   width: 100%;
   height: 100%;
   z-index: 1;
+  cursor: pointer;
 }
 
 .todo-item_remove-action .action_visual {
@@ -431,6 +451,7 @@ body {
   outline: none;
   float: right;
   margin-top: 10px;
+  cursor: pointer;
 }
 
 .todo-action-bar_filtres {
@@ -439,15 +460,15 @@ body {
   margin: 8px 0;
 }
 
-.todo-action-bar_filtres .filtres_item {
+.todo-action-bar_filtres .filtres-item {
   margin: 0 4px;
 }
 
-.todo-action-bar_filtres .filtres_item:first-child {
+.todo-action-bar_filtres .filtres-item:first-child {
   margin-left: 0;
 }
 
-.todo-action-bar_filtres .filtres_item:last-child {
+.todo-action-bar_filtres .filtres-item:last-child {
   margin-right: 0;
 }
 

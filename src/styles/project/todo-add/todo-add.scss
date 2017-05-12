@@ -7,11 +7,11 @@
 	position: relative;
 	overflow: hidden;
 }
-.todo-add_action-input-text{
-	overflow: hidden;
-	padding-right: 5px;
-	padding-left: 15px;
-}
+	.todo-add_input-text{
+		overflow: hidden;
+		padding-right: 5px;
+		padding-left: 15px;
+	}
 .todo-add_input{
 	margin-top: 15px;
 	width: 100%;
@@ -25,7 +25,7 @@
 		font-weight: 100;
 	}
 }
-.todo-main .todo-add .todo-add_select-all-action{
+.todo-add_select-all-action{
 	visibility: hidden;
 }
 .todo-main.__has-todo .todo-add_select-all-action {
@@ -44,6 +44,7 @@
 	opacity: 0;
 	@include absolute-full();
 	z-index: 1;
+	cursor: pointer;
 }
 .todo-add_select-all-action .action_visual {
 	@include absolute-full();

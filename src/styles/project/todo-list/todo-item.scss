@@ -43,6 +43,7 @@
 			opacity: 0;
 			@include absolute-full();
 			z-index: 1;
+			cursor: pointer;
 		}
 		.todo-item_remove-action .action_visual{
 			/*position: absolute;

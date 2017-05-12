@@ -18,14 +18,16 @@
                 <div class="action_visual"></div>
                 <button class="action_target" aria-label="Mark all as completed"></button>
             </div>
-            <div class="todo-add_action-input-text"><input class="todo-add_input" placeholder="What needs to be done?" aria-label="Add todo field"/></div>
+            <div class="todo-add_input-text"><input class="todo-add_input" placeholder="What needs to be done?" aria-label="Add todo field"/></div>
         </div>
 
         <div class="todo-list">
             <div class="todo-item">
                 <div class="input-checkbox todo-item_ready-checker">
                     <input type="checkbox" class="input-checkbox_target" aria-label="Mark is not completed"/>
-                    <div class="input-checkbox_visual"></div>
+                    <div class="input-checkbox_visual">
+                        <div class="input-checkbox_visual_icon"></div>
+                    </div>
                 </div>
                 <div class="action todo-item_remove-action">
                     <div class="action_visual"></div>
@@ -36,7 +38,9 @@
             <div class="todo-item __completed">
                 <div class="input-checkbox todo-item_ready-checker">
                     <input type="checkbox" checked="checked" class="input-checkbox_target" aria-label="Mark is completed"/>
-                    <div class="input-checkbox_visual"> </div>
+                    <div class="input-checkbox_visual">
+                        <div class="input-checkbox_visual_icon"></div>
+                    </div>
                 </div>
                 <div class="action todo-item_remove-action">
                     <div class="action_visual"></div>
@@ -47,7 +51,9 @@
             <div class="todo-item">
                  <div class="input-checkbox todo-item_ready-checker">
                      <input type="checkbox" class="input-checkbox_target" aria-label="Mark is not completed"/>
-                     <div class="input-checkbox_visual"></div>
+                     <div class="input-checkbox_visual">
+                         <div class="input-checkbox_visual_icon"></div>
+                     </div>
                  </div>
                 <div class="action todo-item_remove-action">
                     <div class="action_visual"></div>
@@ -58,7 +64,9 @@
             <div class="todo-item">
                 <div class="input-checkbox todo-item_ready-checker">
                     <input type="checkbox" class="input-checkbox_target" aria-label="Mark is not completed"/>
-                    <div class="input-checkbox_visual"></div>
+                    <div class="input-checkbox_visual">
+                        <div class="input-checkbox_visual_icon"></div>
+                    </div>
                 </div>
                 <div class="action todo-item_remove-action">
                     <div class="action_visual"></div>
@@ -72,9 +80,9 @@
 
             <button class="todo-action-bar_clear-completed" aria-label="Clear comleted todo items">Clear completed</button>
             <div class="todo-action-bar_filtres">
-                <button class="filtres_item __active" data-filter="all" aria-label="Filter: show all todo items">All</button>
-                <button class="filtres_item" data-filter="active" aria-label="Filter: show active todo items">Active</button>
-                <button class="filtres_item" data-filter="completed" aria-label="Filter: show completed todo items">Completed</button>
+                <button class="filtres-item __active" data-filter="all" aria-label="Filter: show all todo items">All</button>
+                <button class="filtres-item" data-filter="active" aria-label="Filter: show active todo items">Active</button>
+                <button class="filtres-item" data-filter="completed" aria-label="Filter: show completed todo items">Completed</button>
             </div>
         </div>
     </div>
