@@ -153,14 +153,6 @@ body {
   margin: 5px;
 }
 
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 120dpi), (min-resolution: 1.5dppx) {
-  .input-checkbox_visual_icon {
-    width: 40px;
-    height: 40px;
-    margin: 5px;
-  }
-}
-
 .filtres-item {
   font-family: "Helvetica Neue", Arial, sans-serif;
   color: #888;
