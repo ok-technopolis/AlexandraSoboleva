@@ -1,0 +1,18 @@
+@import "../../config/globals";
+
+.filtres-item{
+  font-family: $font-main;
+  color: $c-gray-bar-text;
+  font-size: $fs_little;
+  background-color: $c-white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+
+
+.filtres-item.__active {
+  border: 2px solid $c-light-gray-border;
+  border-radius: 5px;
+}
