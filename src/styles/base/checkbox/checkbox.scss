@@ -21,11 +21,11 @@
         .input-checkbox_target:checked ~ .input-checkbox_visual .input-checkbox_visual_icon{
             background: url('../../../images/completed.png') no-repeat;
             @include retinaMedia(){
-                background-position: center center;
-                background-repeat: no-repeat;
-                background-size: 50% 50%;
-                background-image: url('../../../images/completed@2x.png');
-            }
+                  background-position: center center;
+                  background-repeat: no-repeat;
+                  background-size: 50% 50%;
+                  background-image: url('../../../images/completed@2x.png');
+              }
         }
 
     .input-checkbox_visual {
