@@ -36,4 +36,4 @@
         }
     };
 
-    TODO_APP.modules.templates=templates;
+    module.exports = templates;
